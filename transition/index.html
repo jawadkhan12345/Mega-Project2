@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+.box{
+    background-color: brown;
+    display: flex;
+    /* margin:2px 3px ; */
+    width: 600;
+    height: 600;
+    justify-content: center;
+    align-items: center;
+/* box-sizing: border-box; */
+    position: relative;
+}
+img{
+    width: 300px;
+    height: 300px;
+    margin:2px ;
+}
+.top{
+    position: absolute;
+    opacity: 0;
+    transition-duration: 500ms;
+    }
+.top:hover{
+    opacity: 1;
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="delivery.jpg.jpg" alt="">
+        <img src="delivery2.jpg.jpg" class="top" alt="">
+
+    </div>
+</body>
+</html>

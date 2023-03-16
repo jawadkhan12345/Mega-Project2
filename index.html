@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food World</title>
+    <style>
+        
+        .navbar{
+            /* background-color: lightblue; */
+            /* border: 2px solid red; */
+            display: flex;
+            width: 100%;
+
+        }
+        .navbar img{
+            width: 60px;
+            height: 45px;
+        }
+        .menu{
+            display: flex;
+            list-style: none;
+            
+        }
+        .menu li a{
+            text-decoration: none;
+            margin: 6px;
+            padding: 30px;
+            color: rgb(255, 2, 2);
+            font-family: 'Baloo Bhai', cursive;
+
+        }
+        .menu li a:hover{
+            background-color: white;
+            color: black;
+        }
+        #search{
+            margin: 13px;
+            padding: 4px;
+            margin-left: auto;
+        }
+        
+        .container{
+            display: flex;
+            flex-direction: column;
+            /* height: 500px; */
+            margin: 30px 12px;
+            padding: 30px;
+            color: rgb(16, 17, 16);
+            font-family: 'Baloo Bhai', cursive;
+        }
+        /* .container h1{
+            background-color: bla
+        }
+        .container p{
+            background-color: black;
+        } */
+        .container::before{
+        content: "";
+        background: url("1.jpg") no-repeat center center/cover ;  
+        position: absolute;
+        top:0px;
+        left:0px;
+        height: 400px;
+        width:100%;
+        z-index: -1;
+        opacity: 0.7;
+        }
+        
+        
+        .btn{
+        border-radius: 6px;
+        font-family: 'Baloo Bhai', cursive;
+        background-color: rgb(78, 76, 75);
+        color: white;
+        margin: 6px auto;
+        padding: 3px 8px;
+        font-size: 16px;
+        }
+        .btn:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        .fork{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .fork img{
+            width: 150px;
+            height: 150px;
+            
+        }
+        .foodpoints{
+            display: flex;
+            background-color: wheat;
+            font-family: 'Baloo Bhai', cursive;
+
+        }
+        /* .points{
+            border: 1px solid black;           
+            
+        } */
+        .btn1{
+            border-radius: 4px;
+            display: flex;
+            margin: 3px auto;
+            padding: 3px 14px;
+            font-size: 13px;
+            background-color: #f5990f2e;
+            color: #241717;
+            font-family: 'Baloo Bhai', cursive;
+
+
+        }
+        .btn1:hover{
+            background-color: rgb(125, 126, 113);
+            color: white;
+            cursor: pointer;
+        }
+        .flavors{
+            display: flex;
+            font-family: 'Baloo Bhai', cursive;
+
+        }
+        .items{
+            /* border: 1px solid black; */
+            width: 100%;
+            margin: 3px;
+        }
+        .items img{
+            width: 306px;
+            height:130px;
+            margin: 2px;
+            padding: 8px;
+        }
+        .rrr{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 12px auto;
+            font-family: 'Baloo Bhai', cursive;
+
+        }
+        .rrr img{
+            width: 50px;
+            height: 35px;
+        }
+        .special{
+            display: flex;
+            /* width: 1400px; */
+            height: 400px;
+            box-sizing: border-box;
+        }
+        .offer{
+            border: 2px solid red;
+            width: 1000px;
+            height: 400px;
+            display: flex;
+            position: relative;
+        }
+        /* marquee{
+            border-radius: 2px;
+            border: 2px solid black; */
+        
+        .offer img{
+            width: 440px;
+            height: 400px;
+        }
+        #pitrans{
+            position: absolute;
+            opacity: 0;
+            transition: 600ms;
+        }
+        #pitrans:hover{
+            opacity: 1;
+        }
+  
+        .contact{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 8px;
+            padding: 2px 4px;
+            height: 500px;
+            width: 97%;
+         }
+        .contact::before{
+        content: "";
+        position: absolute;
+        background: url("jk.jpg") no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+    }
+        
+        .login{
+        width: 100%;
+        
+
+    } 
+    .login input{
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+        <img src="logo.jpg" alt="logo">
+        </div>
+        <div>
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Categories</a></li>
+                <li><a href="">Meals</a></li>
+            </ul>
+        </div>
+        <input type="text" id="search" placeholder="Enter to Search">
+    </nav>
+    <section class="container">
+        <!-- <img src="1.jpg" alt="burger"> -->
+        <h1><center>Our Passion For Delicious Food</center></h1>
+        <p><center>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam obcaecati sapiente, cumque quia reprehenderit esse culpa magnam quod, sequi architecto dolore at repudiandae qui nam consequatur placeat sed dolores molestias Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tempora voluptatem deserunt eaque id enim pariatur nihil quia animi nisi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, non.</center></p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section class="fork" >
+        <img src="menu.jpg" alt="menu">
+        <h1><center>Our Menu </center></h1>
+    </section>
+
+    <section class="foodpoints">
+        <div class="points">
+            <h3>High Quality</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam omnis nulla quod? Repellendus, distinctio quisquam provident ratione corporis consequuntur aut!</p>
+            <button class="btn1">Read more</button>
+
+        </div>
+        <div class="points">
+            <h3>Best Recepies</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam omnis nulla quod? Repellendus, distinctio quisquam provident ratione corporis consequuntur aut!</p>
+            <button class="btn1">Read more</button>
+        </div>
+        <div class="points">
+            <h3>Real Taste</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam omnis nulla quod? Repellendus, distinctio quisquam provident ratione corporis consequuntur aut!</p>
+            <button class="btn1">Read more</button>
+        </div>
+
+    </section>
+
+    <section class="flavors">
+        <div class="items">
+        <h3><center>Fresh Salads</center></h3>
+        <img src="salad.jpg" alt="">
+        </div>
+        <div class="items">
+        <h3><center>Party Platters</center></h3>
+        <img src="platter.jpg" alt="">
+        </div>
+        <div class="items">
+        <h3><center>Sea Food</center></h3>
+        <img src="sea.jpg" alt="">
+        </div>
+        <div class="items">
+        <h3><center>Desserts</center></h3>
+        <img src="dessert.jpg" alt="">
+        </div>
+    </section>
+    <div class="rrr">
+    <h1><center>Special Offers</center></h1>
+    <img src="icon.jpg" alt="">
+
+</div>
+    
+    <section class="special">
+    <div class="offer">
+    <!-- <h3><center>Pizza</center></h3><br> -->
+    <img src="pi1 (1).jpg" alt="">
+    <img src="pi1 (2).jpg" alt="" id="pitrans">
+    </div>
+    <div class="offer">
+    <!-- <h3><center>Burgers</center></h3> -->
+    <!-- <marquee>BUY 1 GET 1 FREE</marquee> -->
+    <img src="burger1.jpg" alt="">
+    <img src="burger2.jpg.jpg" alt="" id="pitrans">
+    </div>
+    <div class="offer">
+        <!-- <h3><center>Pasta</center></h3> -->
+        <!-- <marquee>BUY 1 GET 1 FREE</marquee> -->
+    <img src="Dessert1.jpg" alt="">
+    <img src="dessert2.jpg" alt="" id="pitrans">
+    </div>
+    </section>
+
+    <section class="contact">
+        <form action="">
+            <h1><center>Register Now</center></h1><br>
+            <div class="login">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Enter Your Name">
+            </div>
+            
+            <div class="login">
+                <label for="name">Email</label>
+                <input type="text" name="name" placeholder="Enter Your Email">
+            </div>
+            
+            <div class="login">
+                <label for="name">Password</label>
+                <input type="Password" name="name" placeholder="Enter Your Password">
+            </div>
+            <button class="btn">Login</button>
+            <div class="login">
+                <p>Create new account to join </p>
+                <button class="btn">Signup</button>              
+
+            </div>
+        </form>
+
+    </section>
+</body>
+</html>
